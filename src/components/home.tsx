@@ -1,27 +1,29 @@
+import Button from "@mui/material/Button";
+import ButtonGroup from "@mui/material/ButtonGroup";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import React, { useEffect } from "react";
-import "./home.scss"; // Import file CSS
-import vietnam from "../assets/img/—Pngtree—design and colors of the_16198550.png";
-import zaloImg from "../assets/img/zalo-chat.webp";
-import thingkingImg from "../assets/img/thingking.jpg";
+import { AiFillInstagram } from "react-icons/ai";
+import {
+  FaCalendarTimes,
+  FaFacebook,
+  FaGithub,
+  FaPhoneAlt,
+  FaRegArrowAltCircleRight,
+} from "react-icons/fa";
+import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoListOutline } from "react-icons/io5";
 import oneImg from "../assets/img/1.png";
 import twoImg from "../assets/img/2.png";
 import threeImg from "../assets/img/3.png";
 import fourImg from "../assets/img/4.png";
-import Button from "@mui/material/Button";
 import logo from "../assets/img/logo.png";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import { FaFacebook } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
-import { FaCalendarTimes } from "react-icons/fa";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
-import { IoListOutline } from "react-icons/io5";
-import ToggleButton from "@mui/material/ToggleButton";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import thingkingImg from "../assets/img/thingking.jpg";
+import zaloImg from "../assets/img/zalo-chat.webp";
+import vietnam from "../assets/img/—Pngtree—design and colors of the_16198550.png";
+import "./home.scss"; // Import file CSS
 import PricingTable from "./PricingTable";
-import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
-import { FaPhoneAlt } from "react-icons/fa";
 
 const Home: React.FC = () => {
   const [view, setView] = React.useState("1");
@@ -36,9 +38,14 @@ const Home: React.FC = () => {
     }
   };
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  const handleGetStartedClick = () => {
+    window.location.href = "https://planbook.vn/";
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home-page">
       <section className="hero-section">
@@ -67,9 +74,10 @@ const Home: React.FC = () => {
               placeholder="Email Address"
               className="email-input"
             />
-            <button className="cta-button">Get Started</button>
+            <button className="cta-button" onClick={handleGetStartedClick}>
+              Get Started
+            </button>
           </div>
-          {/* Hình ảnh minh họa */}
           <img src={vietnam} alt="Illustration" className="hero-image" />
         </div>
       </section>
