@@ -1,0 +1,367 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pricing-title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 80px;
+  }
+  
+  .pricing-title h5 {
+    margin-bottom: 0.5rem;
+    font-size: 30px !important;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-title p {
+    margin: 0.5rem 0; 
+    color: #8492a6 !important;
+  }
+  
+
+  .timeline-section-content  p{
+    color: #8492a6;
+  }
+  .timeline-section-arrow p{
+    color: #8492a6;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px 100px 20px;
+  }
+  
+  .contact-title h5 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-content p {
+    color: #8492a6;
+    margin-bottom: 20px;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #1c6ce0;
+  }
+  
+  .header-logo {
+    display: flex;
+    margin-left: 0;
+    margin-right: auto; /* Đẩy logo về bên trái */
+  }
+
+  .question {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 100px 250px 0px 250px;
+  }
+
+  .question p{
+    color: #8492a6;
+  }
+  
+  .question-item {
+    display: flex;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    max-width: 460px;
+  }
+  
+  .question-content h5{
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .question-icon {
+    color: #0056b3;
+    margin-right: 10px;
+    margin-top: 28px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+.toggle-button-selected {
+    background-color: #3366cc !important; 
+    color: white !important;
+}
+
+.great-features {
+  padding: 40px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+}
+.great-features{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.features-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.features-text h2 {
+  margin-bottom: 30px;
+}
+
+.features-text p {
+  color: #6c757d;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Hai cột có chiều rộng bằng nhau */
+  grid-auto-rows: minmax(100px, auto); /* Điều chỉnh chiều cao của hàng dựa trên nội dung */
+  gap: 20px; /* Khoảng cách giữa các item */
+}
+
+.features-grid p{
+  color: #8492a6;
+}
+
+.feature-item-left {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 275px;
+  height: 170px;
+}
+
+.feature-item-right {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 275px;
+  height: 170px;
+}
+
+.feature-item-right:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: #00b3ff;
+}
+
+
+.feature-item-left:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: #00b3ff;
+}
+
+
+.feature-item h5 {
+  margin-bottom: 8px;
+  color: #343a40;
+  font-size: 1.25rem;
+}
+
+.feature-item p {
+  margin: 0;
+  color: #6c757d;
+}
+
+.feature-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #007bff;
+}
+
+.see-more {
+  display: block;
+  margin: 30px 190px 140px 0px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.see-more:hover {
+  background-color: #0056b3;
+}
+
+
+.home-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #3366cc;
+    color: white;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .subTitle {
+    color: #ffffff80 !important;
+    font-size: 1.2rem;
+    margin-bottom: -10px;
+  }
+  
+  .cta-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4e1f4;
+    border-radius: 50px;
+    padding: 2px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+  }
+  
+  .email-input {
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    flex: 1;
+    margin-right: 10px;
+    background-color: #d4e1f4;
+    outline: none !important;
+  }
+  
+  .cta-button {
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #3366cc;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .hero-image {
+    margin-top: -60px;
+    max-width: 70%;
+    height: auto;
+  }
+  
+  .features-section {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .feature {
+    margin-bottom: 30px;
+  }
+  
+  .timeline-section, .collaborate-section {
+    padding: 50px 20px;
+    // background-color: #f9f9f9;
+    // text-align: center;
+  }
+  
+  .timeline-section h2, .collaborate-section h2 {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    background-color:#202942;
+    padding: 20px 250px 200px 250px;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+    gap: 10px;
+  }
+
+  .footer-content p,a{
+    color: #8492a6;
+  }
+  
+  .footer h4{
+    font-size: 20px;
+  }
+
+  .footer-logo {
+    padding-top: 15px;
+    flex: 1;
+  }
+  
+  .footer-links, .footer-social, .footer-contact {
+    flex: 1;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #8492a6;
+  }
+  
+  .footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+  }
+  
+  .footer-social a {
+    color: inherit;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+    font-size: 13px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e9ecef;
+  }
+  
+  
