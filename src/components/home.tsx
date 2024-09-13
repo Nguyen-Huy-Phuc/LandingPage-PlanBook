@@ -5,22 +5,24 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import React, { useEffect } from "react";
 import { AiFillInstagram } from "react-icons/ai";
 import {
-  FaCalendarTimes,
   FaFacebook,
   FaGithub,
   FaPhoneAlt,
+  FaChalkboardTeacher,
+  FaLaptopCode,
+  FaHandshake
 } from "react-icons/fa";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
 import { IoIosArrowForward} from "react-icons/io";
-import { IoListOutline } from "react-icons/io5";
-import oneImg from "../assets/img/1.png";
-import twoImg from "../assets/img/2.png";
-import threeImg from "../assets/img/3.png";
-import fourImg from "../assets/img/4.png";
+import oneImg from "../assets/img/kho-tai-lieu.png";
+import twoImg from "../assets/img/giao-an-ca-nha.png";
+import threeImg from "../assets/img/de-thi.jpg";
+import fourImg from "../assets/img/thoikhoabieu.png";
 import logo from "../assets/img/logo.png";
-import thingkingImg from "../assets/img/thingking.jpg";
-import zaloImg from "../assets/img/zalo-chat.webp";
-import vietnam from "../assets/img/—Pngtree—design and colors of the_16198550.png";
+import congnghe from "../assets/img/day_bang_cong_nghe.png";
+import giaoan from "../assets/img/soan-giao_an.png";
+import vietnam from "../assets/img/snapedit_1726204166944.png";
+import chiase from "../assets/img/chia-se.png";
 import "./home.scss"; // Import file CSS
 import PricingTable from "./PricingTable";
 
@@ -66,7 +68,7 @@ const Home: React.FC = () => {
           </p>
           <div
             className="cta-form"
-            style={{ marginLeft: "430px", marginTop: "100px" }}
+            style={{ marginLeft: "100px", marginTop: "100px" }}
           >
             <input
               type="email"
@@ -200,13 +202,13 @@ const Home: React.FC = () => {
           <div className="left">
             <img
               style={{ width: "500px", height: "400px", borderRadius: "3%" }}
-              src={zaloImg}
+              src={giaoan}
               alt=""
             />
           </div>
           <div className="right" style={{ paddingLeft: "50px" }}>
             <br />
-            <FaCalendarTimes fontSize={"3rem"} color="#0056b3" />
+            <FaChalkboardTeacher fontSize={"3rem"} color="#f97316" />
             <br />
             <h2 style={{ marginBottom: "0px" }}>Cá nhân hóa bài giảng</h2>
             <h2 style={{ marginTop: "10px" }}>một cách linh hoạt</h2>
@@ -229,40 +231,18 @@ const Home: React.FC = () => {
               </p>
             </div>
             <br />
-            {/* <div
-              className="timeline-section-arrow"
-              style={{ display: "flex", height: "20px" }}
-            >
-              <FaRegArrowAltCircleRight
-                color="#0056b3"
-                style={{ paddingRight: "5px" }}
-              />
-              <p style={{ marginTop: "0px" }}>
-                Digital Marketing Solutions for Tomorrow
-              </p>
-            </div>
-            <div className="timeline-section-arrow" style={{ display: "flex" }}>
-              <FaRegArrowAltCircleRight
-                color="#0056b3"
-                style={{ paddingRight: "5px" }}
-              />
-              <p style={{ marginTop: "0px" }}>
-                Create your own skin to match your brand
-              </p>
-            </div> */}
-            <br />
             <div className="navigate" style={{ display: "flex" }}>
               <a
                 href=""
                 style={{
                   textDecoration: "none",
-                  color: "#0056b3",
+                  color: "#f97316",
                 }}
               >
                 Find Out More
               </a>
               <IoIosArrowForward
-                color="#0056b3"
+                color="#f97316"
                 style={{ paddingLeft: "3px", paddingTop: "1px" }}
               />
             </div>
@@ -277,7 +257,7 @@ const Home: React.FC = () => {
         >
           <div className="left" style={{ paddingRight: "50px" }}>
             <br />
-            <IoListOutline fontSize={"3rem"} color="#0056b3" />
+            <FaLaptopCode fontSize={"3rem"} color="#f97316" />
             <br />
             <h2>Tích hợp công nghệ hiện đại</h2>
             <br />
@@ -299,40 +279,18 @@ const Home: React.FC = () => {
               </p>
             </div>
             <br />
-            {/* <div
-              className="timeline-section-arrow"
-              style={{ display: "flex", height: "20px" }}
-            >
-              <FaRegArrowAltCircleRight
-                color="#0056b3"
-                style={{ paddingRight: "5px" }}
-              />
-              <p style={{ marginTop: "0px" }}>
-                Digital Marketing Solutions for Tomorrow
-              </p>
-            </div>
-            <div className="timeline-section-arrow" style={{ display: "flex" }}>
-              <FaRegArrowAltCircleRight
-                color="#0056b3"
-                style={{ paddingRight: "5px" }}
-              />
-              <p style={{ marginTop: "0px" }}>
-                Create your own skin to match your brand
-              </p>
-            </div> */}
-            <br />
             <div className="navigate" style={{ display: "flex" }}>
               <a
                 href=""
                 style={{
                   textDecoration: "none",
-                  color: "#0056b3",
+                  color: "#f97316",
                 }}
               >
                 Find Out More
               </a>
               <IoIosArrowForward
-                color="#0056b3"
+                color="#f97316"
                 style={{ paddingLeft: "3px", paddingTop: "1px" }}
               />
             </div>
@@ -340,7 +298,7 @@ const Home: React.FC = () => {
           <div className="right">
             <img
               style={{ width: "500px", height: "400px", borderRadius: "3%" }}
-              src={thingkingImg}
+              src={congnghe}
               alt=""
             />
           </div>
@@ -355,13 +313,13 @@ const Home: React.FC = () => {
           <div className="left">
             <img
               style={{ width: "500px", height: "400px", borderRadius: "3%" }}
-              src={zaloImg}
+              src={chiase}
               alt=""
             />
           </div>
           <div className="right" style={{ paddingLeft: "50px" }}>
             <br />
-            <FaCalendarTimes fontSize={"3rem"} color="#0056b3" />
+            <FaHandshake fontSize={"3rem"} color="#f97316" />
             <br />
             <h2>Chia sẻ và hợp tác</h2>
             <br />
@@ -380,40 +338,18 @@ const Home: React.FC = () => {
               </p>
             </div>
             <br />
-            {/* <div
-              className="timeline-section-arrow"
-              style={{ display: "flex", height: "20px" }}
-            >
-              <FaRegArrowAltCircleRight
-                color="#0056b3"
-                style={{ paddingRight: "5px" }}
-              />
-              <p style={{ marginTop: "0px" }}>
-                Digital Marketing Solutions for Tomorrow
-              </p>
-            </div>
-            <div className="timeline-section-arrow" style={{ display: "flex" }}>
-              <FaRegArrowAltCircleRight
-                color="#0056b3"
-                style={{ paddingRight: "5px" }}
-              />
-              <p style={{ marginTop: "0px" }}>
-                Create your own skin to match your brand
-              </p>
-            </div> */}
-            <br />
             <div className="navigate" style={{ display: "flex" }}>
               <a
                 href=""
                 style={{
                   textDecoration: "none",
-                  color: "#0056b3",
+                  color: "#f97316",
                 }}
               >
                 Find Out More
               </a>
               <IoIosArrowForward
-                color="#0056b3"
+                color="#f97316"
                 style={{ paddingLeft: "3px", paddingTop: "1px" }}
               />
             </div>
@@ -675,7 +611,7 @@ const Home: React.FC = () => {
               <div className="feature-icon">
                 {/* Icon placeholder */}
                 <span role="img" aria-label="planning">
-                  🗂️
+                  📆
                 </span>
               </div>
               <h5>Lập kế hoạch giảng dạy</h5>
@@ -690,7 +626,7 @@ const Home: React.FC = () => {
               <div className="feature-icon">
                 {/* Icon placeholder */}
                 <span role="img" aria-label="scheduling">
-                  📅
+                  🤖
                 </span>
               </div>
               <h5>AI tạo giáo án</h5>
@@ -705,7 +641,7 @@ const Home: React.FC = () => {
               <div className="feature-icon">
                 {/* Icon placeholder */}
                 <span role="img" aria-label="tracking">
-                  ⏰
+                  📝
                 </span>
               </div>
               <h5>Tạo bài kiểm tra</h5>
@@ -720,7 +656,7 @@ const Home: React.FC = () => {
               <div className="feature-icon">
                 {/* Icon placeholder */}
                 <span role="img" aria-label="calendar">
-                  📆
+                  👥
                 </span>
               </div>
               <h5>Diễn đàn chia sẻ kinh nghiệm</h5>
@@ -735,7 +671,7 @@ const Home: React.FC = () => {
               <div className="feature-icon">
                 {/* Icon placeholder */}
                 <span role="img" aria-label="collaboration">
-                  🤝
+                  🎯
                 </span>
               </div>
               <h5>Chuẩn kiến thức</h5>
@@ -749,7 +685,7 @@ const Home: React.FC = () => {
               <div className="feature-icon">
                 {/* Icon placeholder */}
                 <span role="img" aria-label="collaboration">
-                  🤝
+                  ⚖️
                 </span>
               </div>
               <h5>Thư viện pháp luật</h5>
