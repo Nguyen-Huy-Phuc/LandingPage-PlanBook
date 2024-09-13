@@ -9,10 +9,9 @@ import {
   FaFacebook,
   FaGithub,
   FaPhoneAlt,
-  FaRegArrowAltCircleRight,
 } from "react-icons/fa";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward} from "react-icons/io";
 import { IoListOutline } from "react-icons/io5";
 import oneImg from "../assets/img/1.png";
 import twoImg from "../assets/img/2.png";
@@ -58,12 +57,12 @@ const Home: React.FC = () => {
           </h5>
         </div>
         <div className="container" style={{ marginTop: "60px" }}>
-          <h1 className="title">A Better Way to Manage your Schedule</h1>
+          <h1 className="title">Giải pháp toàn diện cho giáo viên</h1>
           <p className="subTitle">
-            Launch your campaign and benefit from our expertise on designing and
+          Quản lý giáo án, đề thi cá nhân, tham khảo nguồn giáo án theo chuẩn kiến thức 
           </p>
           <p className="subTitle">
-            managing conversion centered bootstrap v5 html page.
+          và cập nhật tin tức thông tư  của bộ giáo dục mới nhất.
           </p>
           <div
             className="cta-form"
@@ -91,35 +90,106 @@ const Home: React.FC = () => {
           >
             <Button style={{ color: "black", borderRight: "none" }}>
               <div className="feature" style={{ textTransform: "none" }}>
-                <FaFacebook fontSize={"40px"} color="#0056b3" />
-                <h3 style={{ fontWeight: "600px" }}>Easy To Use</h3>
+                {/* <IoIosAlbums fontSize={"40px"} color="#0056b3" /> */}
+                <div className="feature-icon">
+                {/* Icon placeholder */}
+                <span role="img" aria-label="planning" style={{fontSize:"40px" }}>
+                  🗂️
+                </span>
+              </div>
+                <h3 style={{ fontWeight: "600px" }}>Quản lý Giáo án Cá nhân </h3>
                 <p style={{ color: "#8492a6" }}>
-                  Nisl nisi scelerisque eu ultrices vitae auctor eu. Bibendum ut
-                  tristique et egestas quis.
+                Tạo và quản lý giáo án cá nhân một cách dễ dàng. 
+                Tính năng này cho phép bạn tổ chức, chỉnh sửa, và lưu trữ giáo án theo từng chủ đề, môn học, 
+                và lớp học, đảm bảo bạn luôn sẵn sàng với nội dung giảng dạy phù hợp.
                 </p>
               </div>
             </Button>
             <Button style={{ color: "black", borderRight: "none" }}>
               <div className="feature" style={{ textTransform: "none" }}>
-                <AiFillInstagram fontSize={"40px"} color="#0056b3" />
-                <h3>Secure</h3>
+                {/* <IoLibrary fontSize={"40px"} color="#0056b3" /> */}
+                <div className="feature-icon">
+                {/* Icon placeholder */}
+                <span role="img" aria-label="document" style={{fontSize:"40px" }}>
+                 📚
+                </span>
+              </div>
+                <h3>Kho Giáo án Toàn quốc </h3>
                 <p style={{ color: "#8492a6" }}>
-                  Allegedly, a Latin scholar established the origin of a
-                  celebrated theory by creating new words.
+                Truy cập và chia sẻ giáo án từ các giáo viên trên khắp cả nước. 
+                Kho tài liệu phong phú giúp bạn dễ dàng tìm kiếm những giáo án phù hợp, 
+                nâng cao chất lượng giảng dạy và học hỏi từ đồng nghiệp.
                 </p>
               </div>
             </Button>
             <Button style={{ color: "black", borderRight: "none" }}>
               <div className="feature" style={{ textTransform: "none" }}>
-                <FaGithub fontSize={"40px"} color="#0056b3" />
-                <h3>Flexible</h3>
+                {/* <FaRegCalendarAlt fontSize={"40px"} color="#0056b3" /> */}
+                <div className="feature-icon">
+                {/* Icon placeholder */}
+                <span role="img" aria-label="scheduling" style={{fontSize:"40px" }}>
+                  📅
+                </span>
+              </div>
+                <h3>Lịch Giảng dạy và Giáo án </h3>
                 <p style={{ color: "#8492a6" }}>
-                  It seems that only fragments of the original text remain in
-                  the Lorem Ipsum texts used today.
+                Tạo và quản lý thời khóa biểu một cách hiệu quả với khả năng chọn và kéo thả giáo án ứng với từng tiết học.
+                 Tính năng này giúp giáo viên dễ dàng tổ chức lịch dạy và truy cập nhanh chóng vào giáo án ngay trong thời khóa biểu, 
+                 giúp tối ưu hóa công tác chuẩn bị giảng dạy.
                 </p>
               </div>
             </Button>
           </ButtonGroup>
+        </div>
+      </section>
+      <section>
+        <div style={{ marginBottom: "80px" }}>
+          <div
+            className="title-dashboard"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              height: "90px",
+            }}
+          >
+            <h4 style={{ fontSize: "30px" }}>
+            Đa dạng trong việc tạo ra bài giáo án của riêng bạn.
+            </h4>
+          </div>
+          <div
+            className="content-dashboard"
+            style={{ marginTop: "0px", marginBottom: "0px" }}
+          >
+            <p
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                color: "#8492a6",
+              }}
+            >
+              Bắt đầu sử dụng nền tảng
+              <span
+                style={{
+                  marginLeft: "5px",
+                  marginRight: "5px",
+                  fontWeight: "bold",
+                  color: "#f97316",
+                }}
+              >
+                Planbook.vn
+              </span>
+              của chúng tôi để nhận mọi công cụ cần thiết cho việc quản lý giáo án,
+            </p>
+            <p
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                color: "#8492a6",
+              }}
+            >
+              tạo kết nối và nâng cao hiệu quả giảng dạy.
+            </p>
+          </div>
         </div>
       </section>
       <section className="timeline-section">
@@ -138,25 +208,28 @@ const Home: React.FC = () => {
             <br />
             <FaCalendarTimes fontSize={"3rem"} color="#0056b3" />
             <br />
-            <h2>Track your timeline</h2>
+            <h2 style={{ marginBottom: "0px" }}>Cá nhân hóa bài giảng</h2>
+            <h2 style={{ marginTop: "10px" }}>một cách linh hoạt</h2>
             <br />
             <div className="timeline-section-content">
               <p style={{ marginTop: "2px", marginBottom: "0px" }}>
-                Due to its widespread use as filler text for layouts,
-                non-readability is
+                Trang web cung cấp nhiều công cụ mạnh mẽ và dễ sử dụng, cho phép giáo viên 
               </p>
               <p style={{ marginTop: "5px", marginBottom: "0px" }}>
-                of great importance: human perception is tuned to recognize
-                certain
+                tự do sáng tạo và xây dựng các giáo án độc đáo, phù hợp với nhu cầu giảng
               </p>
               <p style={{ marginTop: "5px", marginBottom: "0px" }}>
-                patterns and repetitions in texts. If the distribution of
-                letters visual
+                dạy riêng của từng lớp học. Từ việc sử dụng các mẫu giáo án có sẵn đến việc 
               </p>
-              <p style={{ marginTop: "5px", marginBottom: "10px" }}>impact.</p>
+              <p style={{ marginTop: "5px", marginBottom: "0px" }}>
+                tự thiết kế từ đầu, giáo viên có thể lựa chọn phương pháp và cấu trúc bài 
+              </p>
+              <p style={{ marginTop: "5px", marginBottom: "10px" }}>
+                giảng phù hợp nhất với phong cách giảng dạy của mình.
+              </p>
             </div>
             <br />
-            <div
+            {/* <div
               className="timeline-section-arrow"
               style={{ display: "flex", height: "20px" }}
             >
@@ -176,7 +249,7 @@ const Home: React.FC = () => {
               <p style={{ marginTop: "0px" }}>
                 Create your own skin to match your brand
               </p>
-            </div>
+            </div> */}
             <br />
             <div className="navigate" style={{ display: "flex" }}>
               <a
@@ -206,26 +279,27 @@ const Home: React.FC = () => {
             <br />
             <IoListOutline fontSize={"3rem"} color="#0056b3" />
             <br />
-            <h2 style={{ marginBottom: "0px" }}>Plans and Collaborate</h2>
-            <h2 style={{ marginTop: "10px" }}>your content</h2>
+            <h2>Tích hợp công nghệ hiện đại</h2>
             <br />
             <div className="timeline-section-content">
               <p style={{ marginTop: "2px", marginBottom: "0px" }}>
-                Due to its widespread use as filler text for layouts,
-                non-readability is
+                Chức năng tạo giáo án được hỗ trợ bởi các công cụ công nghệ tiên tiến 
               </p>
               <p style={{ marginTop: "5px", marginBottom: "0px" }}>
-                of great importance: human perception is tuned to recognize
-                certain
+                như trí tuệ nhân tạo (AI), giúp đề xuất nội dung, câu hỏi, và hoạt động 
               </p>
               <p style={{ marginTop: "5px", marginBottom: "0px" }}>
-                patterns and repetitions in texts. If the distribution of
-                letters visual
+                giảng dạy phù hợp với mục tiêu bài học. Giáo viên cũng có thể kéo thả
               </p>
-              <p style={{ marginTop: "5px", marginBottom: "10px" }}>impact.</p>
+              <p style={{ marginTop: "5px", marginBottom: "0px" }}>
+                các yếu tố trong giáo án, thêm hình ảnh, video, và tài liệu tham khảo
+              </p>
+              <p style={{ marginTop: "5px", marginBottom: "10px" }}>
+                một cách dễ dàng.
+              </p>
             </div>
             <br />
-            <div
+            {/* <div
               className="timeline-section-arrow"
               style={{ display: "flex", height: "20px" }}
             >
@@ -245,7 +319,7 @@ const Home: React.FC = () => {
               <p style={{ marginTop: "0px" }}>
                 Create your own skin to match your brand
               </p>
-            </div>
+            </div> */}
             <br />
             <div className="navigate" style={{ display: "flex" }}>
               <a
@@ -272,6 +346,80 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <section className="timeline-section">
+        <div
+          className="container"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <div className="left">
+            <img
+              style={{ width: "500px", height: "400px", borderRadius: "3%" }}
+              src={zaloImg}
+              alt=""
+            />
+          </div>
+          <div className="right" style={{ paddingLeft: "50px" }}>
+            <br />
+            <FaCalendarTimes fontSize={"3rem"} color="#0056b3" />
+            <br />
+            <h2>Chia sẻ và hợp tác</h2>
+            <br />
+            <div className="timeline-section-content">
+              <p style={{ marginTop: "2px", marginBottom: "0px" }}>
+                Ngoài việc tạo giáo án, giáo viên có thể chia sẻ sáng tạo của mình với 
+              </p>
+              <p style={{ marginTop: "5px", marginBottom: "0px" }}>
+                đồng nghiệp, tạo nên một cộng đồng giáo viên tích cực trao đổi kinh nghiệm. 
+              </p>
+              <p style={{ marginTop: "5px", marginBottom: "0px" }}>
+                Bạn cũng có thể xem, tải về và điều chỉnh các giáo án từ kho tài liệu toàn
+              </p>
+              <p style={{ marginTop: "5px", marginBottom: "10px" }}>
+                quốc, đảm bảo rằng bài giảng của mình luôn mới mẻ và đa dạng.  
+              </p>
+            </div>
+            <br />
+            {/* <div
+              className="timeline-section-arrow"
+              style={{ display: "flex", height: "20px" }}
+            >
+              <FaRegArrowAltCircleRight
+                color="#0056b3"
+                style={{ paddingRight: "5px" }}
+              />
+              <p style={{ marginTop: "0px" }}>
+                Digital Marketing Solutions for Tomorrow
+              </p>
+            </div>
+            <div className="timeline-section-arrow" style={{ display: "flex" }}>
+              <FaRegArrowAltCircleRight
+                color="#0056b3"
+                style={{ paddingRight: "5px" }}
+              />
+              <p style={{ marginTop: "0px" }}>
+                Create your own skin to match your brand
+              </p>
+            </div> */}
+            <br />
+            <div className="navigate" style={{ display: "flex" }}>
+              <a
+                href=""
+                style={{
+                  textDecoration: "none",
+                  color: "#0056b3",
+                }}
+              >
+                Find Out More
+              </a>
+              <IoIosArrowForward
+                color="#0056b3"
+                style={{ paddingLeft: "3px", paddingTop: "1px" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section>
         <div style={{ marginBottom: "80px" }}>
           <div
@@ -283,8 +431,9 @@ const Home: React.FC = () => {
             }}
           >
             <h4 style={{ fontSize: "30px" }}>
-              Discover what makes
-              <span style={{ color: "#0056b3" }}>Task manager</span> great.
+              Khám phá những 
+              <span style={{ color: "#f97316" }}> tính năng vượt trội </span> 
+              của công cụ quản lý giáo án.
             </h4>
           </div>
           <div
@@ -298,18 +447,18 @@ const Home: React.FC = () => {
                 color: "#8492a6",
               }}
             >
-              Start working with
+              Bắt đầu với nền tảng giúp bạn 
               <span
                 style={{
                   marginLeft: "5px",
                   marginRight: "5px",
                   fontWeight: "bold",
-                  color: "#2f55d4",
+                  color: "#f97316",
                 }}
               >
-                Landrick
+                tối ưu hóa
               </span>
-              that can provide everything you need to generate
+              công việc giảng dạy và quản lý tài liệu 
             </p>
             <p
               style={{
@@ -318,7 +467,7 @@ const Home: React.FC = () => {
                 color: "#8492a6",
               }}
             >
-              awareness, drive traffic, connect.
+              một cách hiệu quả.
             </p>
           </div>
         </div>
@@ -346,6 +495,7 @@ const Home: React.FC = () => {
                     textAlign: "left",
                     textTransform: "none",
                     paddingLeft: "10px",
+                    width: "350px"
                   }}
                 >
                   <h5
@@ -355,13 +505,13 @@ const Home: React.FC = () => {
                       marginTop: "0px",
                     }}
                   >
-                    Management Dashboard
+                    Kho giáo án
                   </h5>
-                  <p style={{ marginBottom: "0px", color: "#8492a6" }}>
-                    Dummy text is text that is used in the publishing
+                  <p style={{ marginBottom: "0px"}}>
+                    Nguồn giáo án đảm bảo chuẩn kiến thức 
                   </p>
                   <p style={{ marginTop: "0px", marginBottom: "0px" }}>
-                    industry or by web designers.
+                    để tham khảo.
                   </p>
                 </div>
               </ToggleButton>
@@ -376,6 +526,7 @@ const Home: React.FC = () => {
                     textAlign: "left",
                     textTransform: "none",
                     paddingLeft: "10px",
+                    width: "350px"
                   }}
                 >
                   <h5
@@ -385,13 +536,10 @@ const Home: React.FC = () => {
                       marginTop: "0px",
                     }}
                   >
-                    Management Dashboard
+                    Giáo án cá nhân
                   </h5>
                   <p style={{ marginBottom: "0px" }}>
-                    Dummy text is text that is used in the publishing
-                  </p>
-                  <p style={{ marginTop: "0px", marginBottom: "0px" }}>
-                    industry or by web designers.
+                    Lưu trữ giáo án, bảo mật và dễ dàng quản lí
                   </p>
                 </div>
               </ToggleButton>
@@ -406,6 +554,7 @@ const Home: React.FC = () => {
                     textAlign: "left",
                     textTransform: "none",
                     paddingLeft: "10px",
+                    width: "350px"
                   }}
                 >
                   <h5
@@ -415,13 +564,10 @@ const Home: React.FC = () => {
                       marginTop: "0px",
                     }}
                   >
-                    Management Dashboard
+                    Kho đề thi
                   </h5>
                   <p style={{ marginBottom: "0px" }}>
-                    Dummy text is text that is used in the publishing
-                  </p>
-                  <p style={{ marginTop: "0px", marginBottom: "0px" }}>
-                    industry or by web designers.
+                    Đầy đủ phong phú các dạng bài kiểm tra, bài tập
                   </p>
                 </div>
               </ToggleButton>
@@ -436,6 +582,7 @@ const Home: React.FC = () => {
                     textAlign: "left",
                     textTransform: "none",
                     paddingLeft: "10px",
+                    width: "350px"
                   }}
                 >
                   <h5
@@ -445,13 +592,13 @@ const Home: React.FC = () => {
                       marginTop: "0px",
                     }}
                   >
-                    Management Dashboard
+                    Thời khóa biểu
                   </h5>
                   <p style={{ marginBottom: "0px" }}>
-                    Dummy text is text that is used in the publishing
+                    Quản lí lịch dạy học đính kèm giáo án tiện lợi, 
                   </p>
                   <p style={{ marginTop: "0px", marginBottom: "0px" }}>
-                    industry or by web designers.
+                  dễ dàng xem mọi lúc.
                   </p>
                 </div>
               </ToggleButton>
@@ -515,14 +662,13 @@ const Home: React.FC = () => {
       <section className="great-features">
         <div className="features-container">
           <div className="features-text">
-            <h2>Great Features</h2>
+            <h2>Tính Năng Mở Rộng</h2>
             <p>
-              Start working with{" "}
-              <span style={{ color: "#0056b3" }}>Landrick</span> that can
-              provide
+              Bắt đầu sử dụng nền tảng{" "}
+              <span style={{ color: "#f97316" }}> Planbook.vn </span> của chúng tôi 
             </p>
-            <p>everything you need to generate awareness,</p>
-            <p>drive traffic, connect.</p>
+            <p> để nhận mọi công cụ cần thiết cho việc quản lý giáo án,</p>
+            <p> tạo kết nối và nâng cao hiệu quả giảng dạy.</p>
           </div>
           <div className="features-grid">
             <div className="feature-item-left">
@@ -532,10 +678,12 @@ const Home: React.FC = () => {
                   🗂️
                 </span>
               </div>
-              <h5>Task Planning</h5>
+              <h5>Lập kế hoạch giảng dạy</h5>
               <p>
-                It is a long established fact that a reader will be of a page
-                reader will be of at its layout.
+                Tạo ra một thời khóa biểu cá nhân đi kèm với giáo án tương ứng 
+                cho từng tiết học. Tính năng này cho phép bạn dễ dàng quản lý 
+                và sắp xếp thời gian giảng dạy, đảm bảo mọi bài giảng đều được 
+                chuẩn bị kỹ lưỡng và đúng thời gian.
               </p>
             </div>
             <div className="feature-item-right">
@@ -545,10 +693,12 @@ const Home: React.FC = () => {
                   📅
                 </span>
               </div>
-              <h5>Task Scheduling</h5>
+              <h5>AI tạo giáo án</h5>
               <p>
-                It is a long established fact that a reader will be of a page
-                reader will be of at its layout.
+                Tận dụng trí tuệ nhân tạo (AI) để tự động tạo ra các giáo án 
+                phù hợp với mục tiêu giảng dạy của bạn. Chỉ cần nhập chủ đề và 
+                yêu cầu, AI sẽ giúp bạn tạo ra một giáo án hoàn chỉnh, tiết 
+                kiệm thời gian và công sức.
               </p>
             </div>
             <div className="feature-item-left">
@@ -558,10 +708,12 @@ const Home: React.FC = () => {
                   ⏰
                 </span>
               </div>
-              <h5>Task Tracking</h5>
+              <h5>Tạo bài kiểm tra</h5>
               <p>
-                It is a long established fact that a reader will be of a page
-                reader will be of at its layout.
+                Thiết kế và tạo ra các bài kiểm tra một cách nhanh chóng và hiệu 
+                quả. Bạn có thể chọn từ nhiều định dạng câu hỏi, bao gồm trắc 
+                nghiệm, tự luận, và câu hỏi thực hành, phù hợp với từng mục tiêu 
+                kiểm tra của lớp học.
               </p>
             </div>
             <div className="feature-item-right">
@@ -571,10 +723,12 @@ const Home: React.FC = () => {
                   📆
                 </span>
               </div>
-              <h5>Calendar</h5>
+              <h5>Diễn đàn chia sẻ kinh nghiệm</h5>
               <p>
-                It is a long established fact that a reader will be of a page
-                reader will be of at its layout.
+                Tham gia vào cộng đồng giáo viên sôi nổi để chia sẻ kinh nghiệm 
+                giảng dạy, tài liệu, và các phương pháp học tập hiệu quả. Diễn 
+                đàn này là nơi bạn có thể học hỏi và đóng góp ý kiến, tạo nên một 
+                môi trường hỗ trợ lẫn nhau.
               </p>
             </div>
             <div className="feature-item-left">
@@ -584,10 +738,26 @@ const Home: React.FC = () => {
                   🤝
                 </span>
               </div>
-              <h5>Collaboration</h5>
+              <h5>Chuẩn kiến thức</h5>
               <p>
-                It is a long established fact that a reader will be of a page
-                reader will be of at its layout.
+                Đảm bảo rằng bài giảng của bạn luôn tuân thủ các chuẩn kiến thức và 
+                kỹ năng của Bộ Giáo dục. Tính năng này giúp bạn dễ dàng truy cập và 
+                tích hợp các chuẩn kiến thức vào giáo án, đảm bảo chất lượng giảng dạy.
+              </p>
+            </div>
+            <div className="feature-item-right">
+              <div className="feature-icon">
+                {/* Icon placeholder */}
+                <span role="img" aria-label="collaboration">
+                  🤝
+                </span>
+              </div>
+              <h5>Thư viện pháp luật</h5>
+              <p>
+                Truy cập vào thư viện pháp luật đầy đủ và cập nhật, bao gồm các quy 
+                định, thông tư, và chính sách liên quan đến giáo dục. Đây là nguồn 
+                tài liệu quý giá giúp bạn nắm rõ các quy định pháp lý, đảm bảo tuân 
+                thủ trong quá trình giảng dạy và quản lý.
               </p>
             </div>
             <button className="see-more">See more →</button>
@@ -613,11 +783,12 @@ const Home: React.FC = () => {
               <HiOutlineQuestionMarkCircle />
             </div>
             <div className="question-content">
-              <h5>How our Landrick work ?</h5>
+              <h5>Hệ thống của chúng tôi hoạt động như thế nào ?</h5>
               <p>
-                Due to its widespread use as filler text for layouts,
-                non-readability is of great importance: human perception is
-                tuned to recognize certain patterns and repetitions in texts.
+                Hệ thống được thiết kế để hỗ trợ giáo viên trong việc tạo và quản lý 
+                giáo án, đề thi và các tài liệu giáo dục một cách hiệu quả. Với giao 
+                diện thân thiện và dễ sử dụng, giáo viên có thể truy cập và sử dụng 
+                các công cụ một cách nhanh chóng, giúp tối ưu hóa công việc giảng dạy.
               </p>
             </div>
           </div>
@@ -626,11 +797,11 @@ const Home: React.FC = () => {
               <HiOutlineQuestionMarkCircle />
             </div>
             <div className="question-content">
-              <h5>What is the main process open account ?</h5>
+              <h5>Quy trình mở tài khoản như thế nào ?</h5>
               <p>
-                If the distribution of letters and 'words' is random, the reader
-                will not be distracted from making a neutral judgement on the
-                visual impact
+                Việc mở tài khoản rất đơn giản và nhanh chóng. Chỉ cần vài bước cơ bản, 
+                bạn sẽ có ngay một tài khoản để truy cập vào các công cụ và tài liệu cần 
+                thiết cho công việc giảng dạy của mình.
               </p>
             </div>
           </div>
@@ -639,11 +810,11 @@ const Home: React.FC = () => {
               <HiOutlineQuestionMarkCircle />
             </div>
             <div className="question-content">
-              <h5>How to make unlimited data entry ?</h5>
+              <h5>Làm thế nào để nhập liệu không giới hạn ?</h5>
               <p>
-                Furthermore, it is advantageous when the dummy text is
-                relatively realistic so that the layout impression of the final
-                publication is not compromised.
+                Nền tảng của chúng tôi cho phép bạn nhập liệu một cách không giới hạn, 
+                bao gồm tải lên và lưu trữ giáo án, đề thi và tài liệu tham khảo. Tất 
+                cả dữ liệu được lưu trữ an toàn và dễ dàng truy cập bất kỳ lúc nào.
               </p>
             </div>
           </div>
@@ -652,12 +823,12 @@ const Home: React.FC = () => {
               <HiOutlineQuestionMarkCircle />
             </div>
             <div className="question-content">
-              <h5>Is Landrick safer to use with my account ?</h5>
+              <h5>Sử dụng hệ thống có an toàn không ?</h5>
               <p>
-                The most well-known dummy text is the 'Lorem Ipsum', which is
-                said to have originated in the 16th century. Lorem Ipsum is
-                composed in a pseudo-Latin language which more or less
-                corresponds to 'proper' Latin.
+                Chúng tôi cam kết bảo mật tối đa cho tài khoản của bạn. Mọi dữ liệu 
+                cá nhân và tài liệu của bạn đều được mã hóa và bảo vệ theo các tiêu 
+                chuẩn bảo mật cao nhất, đảm bảo rằng bạn có thể yên tâm sử dụng hệ 
+                thống mà không phải lo lắng về vấn đề bảo mật.
               </p>
             </div>
           </div>
@@ -666,22 +837,22 @@ const Home: React.FC = () => {
       <section>
         <div className="contact">
           <div className="contact-title">
-            <h5>Have Question ? Get in touch!</h5>
+            <h5>Bạn còn điều chưa rõ? Liên hệ với chúng tôi!</h5>
           </div>
           <div className="contact-content">
             <p style={{ marginBottom: "0px" }}>
-              Start working with{" "}
-              <span style={{ color: "#0056b3" }}>Landrick</span> that can
-              provide everything you need to generate
+              Bắt đầu sử dụng nền tảng{" "}
+              <span style={{ color: "#f97316" }}>Planbook.vn </span>  
+              của chúng tôi để nhận mọi công cụ cần thiết cho việc quản lý giáo án,
             </p>
             <p style={{ marginTop: "5px", marginBottom: "40px" }}>
-              awareness, drive traffic, connect.
+              tạo kết nối và nâng cao hiệu quả giảng dạy.
             </p>
           </div>
           <button className="contact-button">
             {" "}
             <FaPhoneAlt style={{ marginRight: "10px" }} />
-            Contact us
+            Liên hệ với chúng tôi
           </button>
         </div>
       </section>
@@ -694,45 +865,45 @@ const Home: React.FC = () => {
             </div>
 
             <p style={{ fontSize: "13px" }}>
-              Start working with Landrick that can provide everything you need
-              to generate awareness, drive traffic, connect.
+            Bắt đầu sử dụng nền tảng Planbook.vn của chúng tôi để nhận mọi công cụ 
+            cần thiết cho việc quản lý giáo án, tạo kết nối và nâng cao hiệu quả giảng dạy.
             </p>
           </div>
           <div className="footer-links">
-            <h4>Quick Links</h4>
+            <h4>Liên kết nhanh </h4>
             <ul>
               <li>
                 <a href="#home">
                   {" "}
                   <IoIosArrowForward />
-                  Home
+                  Trang chủ
                 </a>
               </li>
               <li>
                 <a href="#features">
                   {" "}
                   <IoIosArrowForward />
-                  Features
+                  Giáo án
                 </a>
               </li>
               <li>
                 <a href="#pricing">
                   {" "}
                   <IoIosArrowForward />
-                  Pricing
+                  Thời khóa biểu
                 </a>
               </li>
               <li>
                 <a href="#contact">
                   {" "}
                   <IoIosArrowForward />
-                  Contact
+                  Blog
                 </a>
               </li>
             </ul>
           </div>
           <div className="footer-social">
-            <h4>Follow Us</h4>
+            <h4>Theo dõi chúng tôi</h4>
             <div className="social-icons">
               <a
                 href="https://www.facebook.com"
@@ -758,10 +929,10 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="footer-contact">
-            <h4>Contact Us</h4>
+            <h4>Liên hệ với chúng tôi</h4>
             <p>Nhà văn hóa sinh viên</p>
             <p>Email: contact@planbook.com</p>
-            <p>Phone: (+84) 024-123456</p>
+            <p>Điện thoại: (+84) 703 742 715</p>
           </div>
         </div>
       </footer>
