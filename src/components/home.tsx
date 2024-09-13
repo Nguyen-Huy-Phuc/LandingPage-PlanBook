@@ -28,7 +28,7 @@ const Home: React.FC = () => {
   const [view, setView] = React.useState("1");
 
   const handleChange = (
-    event: React.MouseEvent<HTMLElement>,
+    _event: React.MouseEvent<HTMLElement>,
     newView: string | null
   ) => {
     // Chỉ cập nhật giá trị mới nếu nó khác giá trị hiện tại
